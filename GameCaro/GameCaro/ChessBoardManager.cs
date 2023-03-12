@@ -26,6 +26,7 @@ namespace GameCaro
         public int CurrentPlayer { get => currentPlayer; set => currentPlayer = value; }
         public TextBox PlayerName { get => playerName; set => playerName = value; }
         public PictureBox PlayerMark { get => playerMark; set => playerMark = value; }
+        public Stack<Point> PlayTimeLine { get => playTimeLine; set => playTimeLine = value; }
 
         private TextBox playerName;
 
@@ -60,6 +61,8 @@ namespace GameCaro
             }
         }
 
+        private Stack<Point> playTimeLine;
+
         #endregion
 
 
@@ -76,10 +79,10 @@ namespace GameCaro
                 new Player("Nguyễn Lệ Thương", Image.FromFile(Application.StartupPath + "\\Image\\o.jpg"))
             };
 
-            CurrentPlayer = 0;
-            ChangePlayer();
+            PlayTimeLine= new Stack<Point>();
+           
         }
-
+      
         #endregion
 
 
@@ -90,6 +93,8 @@ namespace GameCaro
         {
             ChessBoard.Enabled = true;
             ChessBoard.Controls.Clear();
+            CurrentPlayer = 0;
+            ChangePlayer();
             Matrix = new List<List<Button>>();
             for (int i = 0; i < Cons.CHESS_BOARD_HEIGHT_NUM; i++)
             {
@@ -124,6 +129,12 @@ namespace GameCaro
             {
                 endedGame(this,new EventArgs());
             }
+        }
+
+        public bool Undo()
+        {
+            Button btn = Matrix[0][0];
+            return false;
         }
         private Point GetChessPoint(Button btn)
         {
@@ -286,6 +297,7 @@ namespace GameCaro
             else
             {
                 Mark(btn);
+                PlayTimeLine.Push(GetChessPoint(btn));
                 ChangePlayer();
                 if (playerMarked != null)
                 {

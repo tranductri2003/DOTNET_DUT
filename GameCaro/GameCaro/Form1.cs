@@ -32,6 +32,8 @@ namespace GameCaro
             NewGame();
         }
 
+
+        #region Methods
         void EndGame()
         {
             tmCoolDown.Stop();
@@ -41,6 +43,8 @@ namespace GameCaro
 
         void NewGame()
         {
+            tmCoolDown.Stop();
+            prcbCoolDown.Value = 0;
             ChessBoard.DrawChessBoard();
         }
 
@@ -51,7 +55,7 @@ namespace GameCaro
 
         void Undo()
         {
-
+            ChessBoard.Undo();
         }
         private void ChessBoard_PlayerMarked(object sender, EventArgs e)
         {
@@ -73,25 +77,6 @@ namespace GameCaro
             }
         }
 
-        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            NewGame();
-        }
-
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Undo();
-        }
-
-        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Quit();
-        }
-
-        private void pnlChessBoard_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -100,5 +85,21 @@ namespace GameCaro
                 e.Cancel= true;
             }
         }
+
+        private void newGameToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            NewGame();
+        }
+
+        private void undoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Undo();
+        }
+
+        private void quitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Quit();
+        }
+        #endregion
     }
 }
