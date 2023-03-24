@@ -1,0 +1,12 @@
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\bin\Debug\QLSV_MVC.exe.config
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\bin\Debug\QLSV_MVC.exe
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\bin\Debug\QLSV_MVC.pdb
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.csproj.AssemblyReference.cache
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.csproj.SuggestedBindingRedirects.cache
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.DetailForm.resources
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.MainForm.resources
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.Properties.Resources.resources
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.csproj.GenerateResource.cache
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.csproj.CoreCompileInputs.cache
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.exe
+D:\Code\Bach Khoa\.NET\DOTNET\draft\QLSV_MVC\obj\Debug\QLSV_MVC.pdb
